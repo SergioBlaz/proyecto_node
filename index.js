@@ -12,7 +12,7 @@ mongoose.connect(urlMongoAtlas, (err, res)=>{
             console.log("La conexión a la BD es correcta")
             
             app.listen(port, () => {
-                console.log(`Servidor del API REST está funcionando en http://localhost:3000${port}`)
+                console.log("Servidor del API REST está funcionando en http://localhost:"+port)
             })
         }
     }catch (error) {
